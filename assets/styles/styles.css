@@ -4,6 +4,13 @@
 
 body{
 	font-family: 'Roboto', sans-serif; 
+	font-size: 15px;
+	/*font-weight: 300;  задать основной */
+	line-height: 1.2;
+	color: #3f4244;
+}
+main{
+	margin-top: 100px;
 }
 
 /* Container */
@@ -11,7 +18,7 @@ body{
 	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
-	background: pink;/* ******/
+	/*	background: pink; ******/
 }
 
 /* Header */
@@ -23,7 +30,7 @@ body{
 	background-color: #fff;
 	z-index: 10;
 }
-.header_line{
+.header_block{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -33,18 +40,16 @@ body{
 	width: 100px;
 	height: 26px;
 }
-
 .nav_link{
-	font-size: 15px;
 	font-weight: 400;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #3f4244;
 	background-color: #fff;
+	color: #3f4244;
 	padding: 14px 20px;
 	border-radius: 10px;
+	
 }
-
 .nav_link:not(:last-child){
 	margin-right: 10px;
 }
@@ -53,6 +58,69 @@ body{
 	background-image: linear-gradient(180deg, #6dffc6 1%, #3fd2ce 99%);
 }
 
-.nav_link:hover::after{
+/* Intro */
+.intro{
+	display: flex;
+	min-height: 700px;
+	background-image: linear-gradient(180deg, #6dffc6 1%, #3fd2ce 99%);
+}
+.intro_content{
+	margin: auto;
+}
+.intro_title{
+	font-size: 60px;
+	font-weight: 300;
+	color: #fff;
+	margin-bottom: 50px;
+}
+.btn{
+	font-weight: 500;
+	text-transform: uppercase; 
+	color: #fff;
+	text-align: center;
+	border: 0;
+	padding: 24px 15px;
+	border-radius: 9px;
+	min-width: 250px;
+	background-image: linear-gradient(180deg, #ff6c54 1%, #ff2b59 99%);	
+}
+
+.bt_center{
+	margin: 0 auto;
 	display: block;
+}
+
+
+/* Directions */
+.directions{
+	padding: 80px 0;
+}
+
+.directions_item_block{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between; 
+}
+.directions_item{
+	flex-basis: 270px;
+	text-align: center;
+	margin-bottom: 85px;
+}
+
+.directions_item_img{
+	width: 130px;
+	height: 130px;
+	margin: 0 auto;
+}
+.directions_title{
+	font-weight: 500;
+	text-transform: uppercase; 
+	margin: 20px 0 55px 0;
+}
+
+.directions_item_txt{
+	font-size: 13px;
+	font-weight: 400;
+	text-align: center;
+
 }

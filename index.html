@@ -187,26 +187,25 @@
             <h2 class="contact_title">Contact Us</h2>
             <p class="contact_txt">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant convenire et vis. 
         Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.</p>   
-   
-        <div class="contact_wrap">
-            <form action="#"> 
-                <div class="login name">
-                    <input type="text" placeholder="Yor name here">
-                    <span class="icon icon_name"></span>
-                </div> 
-                <div class="login email"> 
-                    <input type="email" placeholder="Yor mail here">
-                    <span class="icon icon_email"></span>
-                </div>
-                <div class="message">
-                    <span class="icon_message"></span>
-                    <textarea placeholder="Yor message here"></textarea>
-                </div>
-                <button type="submit" class="btn_sub">Send Message</button>
-            </form>     
-        </div> 
+      
+        <form action="#" class="contact-form"> 
+            <div class="field-wrapper">
+                <input type="text" name="name" placeholder="Yor name here">
+                <span class="icon icon_name"></span>
+            </div> 
+            <div class="field-wrapper"> 
+                <input type="email" name="email" placeholder="Yor mail here">
+                <span class="icon icon_email"></span>
+            </div>
+            <div class="field-wrapper field-wrapper__textarea">
+                <span class="icon icon_message"></span>
+                <textarea name="message" placeholder="Yor message here"></textarea>
+            </div>
+            <button type="submit" class="btn_sub">Send Message</button>
+        </form>  
+
         </div>
-</div>
+    </div>
 </section>  
 
 </body>
